@@ -1,0 +1,22 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+		{
+            "name": "localhost",
+            "type": "php",
+            "request": "launch",
+            "runtimeArgs": [
+                "-dxdebug.mode=debug,develop",
+                "-dxdebug.start_with_request=yes",
+                "-S",
+                "localhost:80"
+            ],
+            "program": "",
+            "cwd": "${workspaceRoot}",
+            "port": 9003
+        }
+    ]
+}

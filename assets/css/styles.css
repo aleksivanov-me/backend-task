@@ -1,4 +1,110 @@
 /*Add your custom styles here*/
-.starting-title {
-    text-align: center;
+.starting-title,
+h2,
+h3,
+p {
+	text-align: center;
+}
+
+form p {
+	text-align: left;
+}
+
+table {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	table-layout: fixed;
+}
+
+table thead tr {
+	background-color: #f0f0f0;
+}
+
+table tr {
+	background-color: #f8f8f8;
+	border: 1px solid #ddd;
+	padding: 0.35em;
+}
+
+table th,
+table td {
+	padding: 0.625em;
+	text-align: center;
+}
+
+table th {
+	font-size: 0.85em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+	table {
+		border: 0;
+	}
+
+	table thead th:not(:empty) {
+		display: block;
+		text-align: left;
+		border-bottom: 1px solid #ddd;
+	}
+
+	table thead th:empty {
+		display: none;
+	}
+
+	table tr {
+		border-bottom: 3px solid #ddd;
+		display: block;
+		margin-bottom: 0.625em;
+	}
+
+	table td {
+		border-bottom: 1px solid #ddd;
+		display: block;
+		text-align: left;
+	}
+
+	table td::before {
+		float: left;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	table td:last-child {
+		border-bottom: 0;
+	}
+}
+
+form {
+	max-width: 90%;
+	width: 420px;
+	margin: 0 auto;
+}
+
+form input {
+	width: 100%;
+}
+
+input {
+	font: 1.25rem / 1.5 sans-serif;
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.25rem 0.75rem;
+}
+
+input[type="submit"],
+button {
+	background-color: #4caf50;
+	border: none;
+	color: white;
+	padding: 8px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
 }
